@@ -1,7 +1,7 @@
 {
-  "name": "react-workspace",
+  "name": "react-router",
   "version": "1.0.0",
-  "description": "Простой воркспейс для старта разработки реакт приложения.",
+  "description": "Пример использования react-router.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codyfet/react-workspace.git"
+    "url": "git+https://github.com/codyfet/react-router.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codyfet/react-workspace/issues"
+    "url": "https://github.com/codyfet/react-router/issues"
   },
-  "homepage": "https://github.com/codyfet/react-workspace#readme",
+  "homepage": "https://github.com/codyfet/react-router#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
