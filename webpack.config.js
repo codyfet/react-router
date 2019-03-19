@@ -6,6 +6,11 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+    output: {
+        path: __dirname + '/dist',
+        filename: 'main.js',
+        publicPath: '/'
+    },
     module: {
         rules: [
             {
@@ -14,7 +19,7 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
-            }, 
+            },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
@@ -24,6 +29,9 @@ module.exports = {
                 use: ["style-loader", "css-loader", "less-loader"]
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [htmlPlugin]
 }
